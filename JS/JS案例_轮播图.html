@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .banner{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<img src="img/banner_1.jpg" alt="" id="banner" class="banner">
+<script>
+    let num = 1;
+    let banner = document.getElementById("banner");
+    let time= setInterval(function fun(){
+        num++;
+        if (num > 3){
+            num = 1;
+        }
+        // console.log(num);
+        banner.src="img/banner_" + num + ".jpg";
+    },3000);
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态表格</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #all {
+            width: 100%;
+            /*border: 1px solid red;*/
+        }
+
+        .all_form, .all_table {
+            width: auto;
+            text-align: center;
+            /*border: 1px solid red;*/
+            /*display: flex;*/
+            padding: 50px;
+        }
+
+        .all_table {
+            padding: 0;
+        }
+
+        .all_table > table {
+            border: 1px solid red;
+            margin: auto;
+        }
+
+        .all_form > input {
+            margin: auto;
+            /*flex-align:center ;*/
+        }
+    </style>
+</head>
+<body>
+<div id="all">
+    <div class="all_form">
+        <input type="text" placeholder="请输入编号" id="form_id">
+        <input type="text" placeholder="请输入姓名" id="form_name">
+        <input type="text" placeholder="请输入性别" id="form_sex">
+        <input type="button" id="form_btn" value="添加">
+    </div>
+    <div class="all_table">
+        <table border="1" width="500">
+            <caption>学生信息表</caption>
+            <tbody>
+            <tr>
+                <td>编号</td>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>令狐冲</td>
+                <td>男</td>
+                <td><a href="javascript:void(0)" onclick="delTr(this)">删除</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>岳不群</td>
+                <td>男</td>
+                <td><a href="javascript:void(0)" onclick="delTr(this)">删除</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>岳灵珊</td>
+                <td>女</td>
+                <td><a href="javascript:void(0)" onclick="delTr(this)">删除</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<script>
+    /*
+    添加功能
+    1.给添加按钮绑定点击事件
+    2.获取文本内容
+    3.创建td将获取的内容添加到td中
+    4.创建tr
+    5.将td添加到tr中
+    6.获取table将tr添加到table中
+    */
+    //1.给添加按钮绑定点击事件
+    document.getElementById("form_btn").onclick = function () {
+        //2.获取文本内容
+        let form_id = document.getElementById("form_id").value;
+        let form_name = document.getElementById("form_name").value;
+        let form_sex = document.getElementById("form_sex").value;
+        /*//3.创建td将获取的内容添加到td中
+        let td_id = document.createElement("td");
+        let text_form_id = document.createTextNode(form_id);
+        td_id.appendChild(text_form_id);
+        let td_name = document.createElement("td");
+        let text_form_name = document.createTextNode(form_name);
+        td_name.appendChild(text_form_name);
+        let td_sex = document.createElement("td");
+        let text_form_sex = document.createTextNode(form_sex);
+        td_sex.appendChild(text_form_sex);
+        let td_btn = document.createElement("td");
+        let td_a = document.createElement("a");
+        td_a.setAttribute("href","javascript:void(0)");
+        td_a.setAttribute("onclick","delTr(this)");
+        let text_td_a = document.createTextNode("删除");
+        td_a.appendChild(text_td_a);
+        td_btn.appendChild(td_a);
+        //4.创建tr
+        let tr_one = document.createElement("tr");
+        //5.将td添加到tr中
+        tr_one.appendChild(td_id)
+        tr_one.appendChild(td_name)
+        tr_one.appendChild(td_sex)
+        tr_one.appendChild(td_btn)
+        //6.获取table将tr添加到table中
+        let table_one = document.getElementsByTagName("table")[0];
+        table_one.appendChild(tr_one);*/
+
+        //使用innerHTML
+        let table_one = document.getElementsByTagName("table")[0];
+        table_one.innerHTML +=
+            "<tr>\n" +
+                "<td>"+ form_id +"</td>\n" +
+                "<td>"+ form_name +"</td>\n" +
+                "<td>"+ form_sex +"</td>\n" +
+                "<td><a href=\"javascript:void(0)\" onclick=\"delTr(this)\">删除</a></td>\n"
+            +"</tr>";
+
+    }
+
+    /*
+    * 删除功能
+    * */
+
+    function delTr(obj) {
+        let table = obj.parentNode.parentNode.parentNode;
+        let tr = obj.parentNode.parentNode;
+        table.removeChild(tr);
+    }
+
+</script>
+</body>
+</html>

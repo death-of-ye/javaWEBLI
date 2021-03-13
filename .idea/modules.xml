@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HTML&amp;CSS/HTML&amp;CSS.iml" filepath="$PROJECT_DIR$/HTML&amp;CSS/HTML&amp;CSS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JS/JS.iml" filepath="$PROJECT_DIR$/JS/JS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServletDome/Servlet.iml" filepath="$PROJECT_DIR$/ServletDome/Servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet&amp;HTTP&amp;Result/Servlet&amp;HTTP&amp;Result.iml" filepath="$PROJECT_DIR$/Servlet&amp;HTTP&amp;Result/Servlet&amp;HTTP&amp;Result.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tomcat/Tomcat.iml" filepath="$PROJECT_DIR$/Tomcat/Tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootstrap/bootstrap.iml" filepath="$PROJECT_DIR$/bootstrap/bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataSources/dataSources.iml" filepath="$PROJECT_DIR$/dataSources/dataSources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
+    </modules>
+  </component>
+</project>

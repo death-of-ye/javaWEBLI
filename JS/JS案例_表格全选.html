@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格全选</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #all {
+            width: 100%;
+            /*border: 1px solid red;*/
+        }
+
+        .all_form, .all_table {
+            width: auto;
+            text-align: center;
+            /*border: 1px solid red;*/
+            /*display: flex;*/
+            padding: 50px;
+        }
+
+        .all_table {
+            padding: 0;
+        }
+
+        .all_table > table {
+            /*border: 1px solid red;*/
+            margin: auto;
+        }
+
+        .all_form > input {
+            margin: auto;
+            /*flex-align:center ;*/
+        }
+
+        .btn {
+            /*text-align: left;*/
+            padding-right: 10px;
+            border: none;
+        }
+
+        .btn > button {
+            margin: 10px 10px 0 0;
+        }
+    </style>
+</head>
+<body>
+<div id="all">
+    <div class="all_table">
+        <table border="1" width="500">
+            <caption>学生信息表</caption>
+            <tbody>
+            <tr>
+                <td><input type="checkbox" name="ck" id="first_checkbox"></td>
+                <td>编号</td>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="ck"></td>
+                <td>1</td>
+                <td>令狐冲</td>
+                <td>男</td>
+                <td><a href="javascript:void(0)" onclick="delTr(this)">删除</a></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="ck"></td>
+                <td>2</td>
+                <td>岳不群</td>
+                <td>男</td>
+                <td><a href="javascript:void(0)" onclick="delTr(this)">删除</a></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="ck"></td>
+                <td>3</td>
+                <td>岳灵珊</td>
+                <td>女</td>
+                <td><a href="javascript:void(0)" onclick="delTr(this)">删除</a></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="btn">
+            <button id="selectAll">全选</button>
+            <button id="unselectAll">全不选</button>
+            <button id="feiSelect">反选</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    let trs = document.getElementsByName("ck");
+    //全选
+    document.getElementById("selectAll").onclick = function (){
+        for (let i = 0; i < trs.length; i++) {
+            trs[i].checked = true;
+        }
+    }
+    //全不选
+    document.getElementById("unselectAll").onclick = function (){
+        for (let i = 0; i < trs.length; i++) {
+            trs[i].checked = false;
+        }
+    }
+    //反选
+    document.getElementById("feiSelect").onclick = function (){
+        for (let i = 0; i < trs.length; i++) {
+            trs[i].checked = !trs[i].checked;
+        }
+    }
+    document.getElementById("first_checkbox").onclick = function (){
+        for (let i = 1; i < trs.length; i++) {
+            trs[i].checked = this.checked;
+        }
+    }
+</script>

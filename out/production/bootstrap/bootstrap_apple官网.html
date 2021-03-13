@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap apple官网</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="../js/jQuery3.6.0.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .all_top {
+            background-color: #222;
+            min-height: 50px;
+        }
+
+        body {
+            background-color: rgb(251, 251, 253);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            padding: 0;
+            margin: 0;
+        }
+
+        .all_nav {
+            /*background-color: #f5f5f5;*/
+            min-height: 50px;
+            border: none;
+            line-height: 50px;
+            margin-bottom: 0;
+        }
+
+        .body_nav > ul > li > a {
+            padding: 15px 20px;
+        }
+
+        .advertising {
+            background-color: #0070c9;
+            text-align: center;
+            height: 100px;
+            max-height: 100px;
+            line-height: 150px;
+            color: white;
+        }
+
+        .body_brand {
+            text-align: center;
+        }
+
+        .headline {
+            font-size: 56px;
+            line-height: 1.07143;
+            font-weight: 600;
+            letter-spacing: -.005em;
+            font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            padding-top: 20px;
+        }
+
+        .subhead {
+            text-align: center;
+            display: block;
+            width: 100%;
+            /*position: relative;*/
+            -ms-flex-negative: 1;
+            flex-shrink: 1;
+            margin: 0;
+        }
+
+        .price {
+            color: #c0c0c0;
+            font-weight: 500;
+            padding-top: 10px;
+            font-size: 16px;
+        }
+
+        .body_buy {
+            padding-top: 20px;
+        }
+
+        .body_buy > a {
+            padding-right: 10px;
+        }
+
+        .body_reverse {
+            background-color: #000;
+        }
+
+        .headlineOne, .Air_pro_title, .MacBook_title {
+            color: white;
+        }
+
+        .subheadOne {
+            font-size: 18px;
+        }
+
+        .watch_title, .Air_pro_title, .MacBook_title {
+            padding-bottom: 10px;
+        }
+
+        .watch_text {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .footer_start {
+            font-size: 12px;
+            line-height: 1.33337;
+            font-weight: 400;
+            letter-spacing: -.01em;
+            font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            color: #a7a7a7;
+        }
+
+        .footer_start > a {
+            color: #a7a7a7;
+        }
+    </style>
+</head>
+<body>
+<!--页眉-->
+<header class="container-fluid">
+    <!--导航条-->
+    <nav class=" container-fluid all_nav navbar  navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand glyphicon glyphicon-apple" href="#"></a>
+        </div>
+        <div class="collapse navbar-collapse body_nav" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class=""><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">Music</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">技术支持</a></li>
+                <li><a href="#" class="glyphicon glyphicon-search"></a></li>
+                <li class=" dropdown">
+                    <a href="#" class="dropdown-toggle glyphicon glyphicon-lock" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false"></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!--主体-->
+<div class="">
+    <div class="container-fluid">
+        <div class="row advertising">
+            <p>限时优惠：换购新 Apple Watch Series 6，可享最高达 RMB 150 的额外折抵优惠；更有 24 期免息分期，每月仅 RMB 96 起*。
+                <a href="#" style="color: white">立即选购&nbsp;&gt;</a>
+            </p>
+        </div>
+        <div class="row col-md-4 col-md-offset-4 body_brand">
+            <h2 class="headline">iPhone 12</h2>
+        </div>
+        <div class="row col-md-4 col-md-offset-4 body_brand">
+            <h3 class="subhead" role="presentation">升维大提速。</h3>
+        </div>
+        <div class="row col-md-4 col-md-offset-4 body_brand">
+            <p class="price">
+            <span aria-label="RMB 229 每月或 RMB 5499 起，还可折抵换购。" role="text">RMB 229/月或 RMB 5499 起<span
+                    style="position: absolute;">，</span><br>还可折抵换购<sup class="footnote footnote-number"><a
+                    href="#footnote-1" aria-label="脚注 1">1</a></sup><span style="position: absolute;">。</span></span>
+            </p>
+        </div>
+        <div class="row col-md-4 col-md-offset-4 body_brand body_buy">
+            <a href="">进一步了解&gt;</a><a href="">购买&gt;</a>
+        </div>
+        <div class="row col-md-6 col-md-offset-3 body_buy">
+            <img src="../img/iphone12.png" alt="" class="img-responsive">
+        </div>
+    </div>
+    <div class="container-fluid body_reverse">
+        <div class="row col-md-4 col-md-offset-4 body_brand">
+            <h2 class="headline headlineOne">iPhone 12 pro</h2>
+        </div>
+        <div class="row col-md-4 col-md-offset-4 body_brand">
+            <h3 class="subhead headlineOne" role="presentation">自我再飞跃。</h3>
+        </div>
+        <div class="row col-md-4 col-md-offset-4 body_brand">
+            <p class="price">
+            <span aria-label="RMB 229 每月或 RMB 5499 起，还可折抵换购。" role="text">RMB 229/月或 RMB 5499 起<span
+                    style="position: absolute;">，</span><br>还可折抵换购<sup class="footnote footnote-number"><a
+                    href="#footnote-1" aria-label="脚注 1">1</a></sup><span style="position: absolute;">。</span></span>
+            </p>
+        </div>
+        <div class="row col-md-4 col-md-offset-4 body_brand body_buy">
+            <a href="">进一步了解&gt;</a><a href="">购买&gt;</a>
+        </div>
+        <div class="row col-md-6 col-md-offset-3 body_buy">
+            <img src="../img/iphone12_01.png" alt="" class="img-responsive">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row col-md-4 col-md-offset-4 body_brand">
+            <h2 class="headline">iPad Air</h2>
+        </div>
+        <div class="row col-md-4 col-md-offset-4 body_brand">
+            <h3 class="subhead" role="presentation">凭实力出彩。</h3>
+        </div>
+        <div class="row col-md-4 col-md-offset-4 body_brand body_buy">
+            <a href="">进一步了解&gt;</a><a href="">购买&gt;</a>
+        </div>
+        <div class="row col-md-6 col-md-offset-3 body_buy">
+            <img src="../img/iphone12_02.png" alt="" class="img-responsive">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-6 thumbnail">
+                <div class="row col-md-4 col-md-offset-4 body_brand">
+                    <h3 class="watch_title"><span class="glyphicon glyphicon-apple">Watch</span></h3>
+                </div>
+                <div class="row col-md-4 col-md-offset-4 body_brand">
+                    <h3 class="watch_text" role="presentation">事事拿手,轻松入手。</h3>
+                </div>
+                <div class="row col-md-4 col-md-offset-4 body_brand body_buy">
+                    <a href="">进一步了解&nbsp;&gt;</a><a href="">购买&nbsp;&gt;</a>
+                </div>
+                <div class="row col-md-6 col-md-offset-3 body_buy">
+                    <img src="../img/watchSE.png" alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 body_reverse thumbnail">
+                <div class="row col-md-4 col-md-offset-4 body_brand">
+                    <h2 class="Air_pro_title">AirPods pro</h2>
+                </div>
+                <div class="row col-md-4 col-md-offset-4 body_brand">
+                    <h3 class="subhead headlineOne" role="presentation">妙的不同凡响。</h3>
+                </div>
+                <div class="row col-md-4 col-md-offset-4 body_brand body_buy">
+                    <a href="">进一步了解&gt;</a><a href="">购买&gt;</a>
+                </div>
+                <div class="row col-md-6 col-md-offset-3 body_buy">
+                    <img src="../img/AirPods%20pro01.png" alt="" class="img-responsive">
+                </div>
+            </div>
+            <div class="col-md-6 body_reverse thumbnail">
+                <div class="row col-md-4 col-md-offset-4 body_brand">
+                    <h2 class="MacBook_title">MacBook Air</h2>
+                </div>
+                <div class="row col-md-4 col-md-offset-4 body_brand">
+                    <h3 class="subhead headlineOne" role="presentation">实力,如此轻巧。</h3>
+                </div>
+                <div class="row col-md-4 col-md-offset-4 body_brand body_buy">
+                    <a href="">进一步了解&gt;</a><a href="">购买&gt;</a>
+                </div>
+                <div class="row col-md-6 col-md-offset-3 body_buy">
+                    <img src="../img/AirPods%20pro01.png" alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 body_reverse thumbnail">
+                <div class="row col-md-4 col-md-offset-4 body_brand">
+                    <h2 class="MacBook_title">MacBook pro</h2>
+                </div>
+                <div class="row col-md-4 col-md-offset-4 body_brand">
+                    <h3 class="subhead headlineOne" role="presentation">一步到位。</h3>
+                </div>
+                <div class="row col-md-4 col-md-offset-4 body_brand body_buy">
+                    <a href="">进一步了解&gt;</a><a href="">购买&gt;</a>
+                </div>
+                <div class="row col-md-6 col-md-offset-3 body_buy">
+                    <img src="../img/MacBook%20pro01.png" alt="" class="img-responsive">
+                </div>
+            </div>
+            <div class="col-md-6 body_reverse thumbnail">
+                <div class="row col-md-4 col-md-offset-4 body_brand">
+                    <h2 class="MacBook_title">MacBook pro</h2>
+                </div>
+                <div class="row col-md-4 col-md-offset-4 body_brand">
+                    <h3 class="subhead headlineOne" role="presentation">一步到位。</h3>
+                </div>
+                <div class="row col-md-4 col-md-offset-4 body_brand body_buy">
+                    <a href="">进一步了解&gt;</a><a href="">购买&gt;</a>
+                </div>
+                <div class="row col-md-6 col-md-offset-3 body_buy">
+                    <img src="../img/MacBook%20pro01.png" alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页脚-->
+<footer class="container">
+    <div class="row footer_start">
+        <p>
+            活动日期：2021 年 3 月 1 日 - 2021 年 4 月 1 日。所示的 Apple Watch Series 6 (GPS) 40 毫米铝金属表款价格是使用 Apple Watch Series 4
+            (GPS) 40
+            毫米铝金属表款进行折抵换购的价格。上述所示分期付款金额仅为折抵换购后使用特定期数免息分期付款估算得出的示例（仅显示整数数额，未显示小数点以后的金额)，实际支付金额以银行或花呗账单为准。银行和花呗的免息分期期数可能有所不同。折抵服务的购新价格仅可在限定时间内使用，并且要求用于购买新款
+            Apple
+            Watch，以限制条款为准。实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区。银行或花呗可能要求你的可用信用额度大于所购买产品的总金额，才能使用分期付款服务。有关信用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Apple
+            对此不做任何承诺和保证。Apple 的折抵换购服务为 Apple 与 Apple 折抵服务合作伙伴共同推出，年满 18 周岁及以上者才能享受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件
+            (当地法律可能会要求存储该信息)。可能需要遵守 Apple 或 Apple 折抵服务合作伙伴的其他条款。本折抵换购服务不能与 Apple 的其他优惠或折扣活动同时使用。如需了解更多免息分期付款信息，<a
+                href="#">请点击此处</a>。
+        </p>
+        <p>
+            1.上述所示分期付款金额仅为使用特定期数免息分期付款估算得出的示例（仅显示整数数额，未显示小数点以后的金额)，实际支付金额以银行或花呗账单为准。最高可享 24 期免息分期，到 Apple Store
+            零售店和在线商店购买时可享受的免息分期期数和最低限额可能有所不同，银行和花呗提供的免息分期期数和最低限额可能有所不同。实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区。银行或花呗可能要求你的可用信用额度大于所购买产品的总金额，才能使用分期付款服务。有关信用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Apple
+            对此不做任何承诺和保证。Apple 的折抵换购服务为 Apple 与 Apple 折抵服务合作伙伴共同推出，年满 18 周岁及以上者才能享受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件
+            (当地法律可能会要求存储该信息)。可能需要遵守 Apple 或 Apple 折抵服务合作伙伴的其他条款。本折抵换购服务不能与 Apple 的其他优惠或折扣活动同时使用。如需了解更多免息分期付款信息，<a
+                href="#">请点击此处</a>。
+        </p>
+    </div>
+    <div class="row">
+<!--        <div class="col-ma-2">-->
+<!--            <ul>-->
+<!--                <li><a href="">选购与了解</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">Mac</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">iPad</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">iphone</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">Music</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">AirPods</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">HomePod</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">iPod touch</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">配件</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">App Store充值卡</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="col-ma-2">-->
+<!--            <ul>-->
+<!--                <li><a href="">选购与了解</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">Mac</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">iPad</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">iphone</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">Music</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">AirPods</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">HomePod</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">iPod touch</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">配件</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">App Store充值卡</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="col-ma-2">-->
+<!--            <ul>-->
+<!--                <li><a href="">选购与了解</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">Mac</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">iPad</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">iphone</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">Music</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">AirPods</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">HomePod</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">iPod touch</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">配件</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li><a href="">App Store充值卡</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+        <div class="col-ma-6">
+            <ul>
+                <li><a href="">选购与了解</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Mac</a></li>
+            </ul>
+            <ul>
+                <li><a href="">iPad</a></li>
+            </ul>
+            <ul>
+                <li><a href="">iphone</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Music</a></li>
+            </ul>
+            <ul>
+                <li><a href="">AirPods</a></li>
+            </ul>
+            <ul>
+                <li><a href="">HomePod</a></li>
+            </ul>
+            <ul>
+                <li><a href="">iPod touch</a></li>
+            </ul>
+            <ul>
+                <li><a href="">配件</a></li>
+            </ul>
+            <ul>
+                <li><a href="">App Store充值卡</a></li>
+            </ul>
+        </div>
+        <div class="col-ma-6">
+            <ul>
+                <li><a href="">选购与了解</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Mac</a></li>
+            </ul>
+            <ul>
+                <li><a href="">iPad</a></li>
+            </ul>
+            <ul>
+                <li><a href="">iphone</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Music</a></li>
+            </ul>
+            <ul>
+                <li><a href="">AirPods</a></li>
+            </ul>
+            <ul>
+                <li><a href="">HomePod</a></li>
+            </ul>
+            <ul>
+                <li><a href="">iPod touch</a></li>
+            </ul>
+            <ul>
+                <li><a href="">配件</a></li>
+            </ul>
+            <ul>
+                <li><a href="">App Store充值卡</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
