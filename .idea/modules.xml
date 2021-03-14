@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/bootstrap/bootstrap.iml" filepath="$PROJECT_DIR$/bootstrap/bootstrap.iml" />
       <module fileurl="file://$PROJECT_DIR$/dataSources/dataSources.iml" filepath="$PROJECT_DIR$/dataSources/dataSources.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mock_login/mock_login.iml" filepath="$PROJECT_DIR$/mock_login/mock_login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mock_login_ceshi/mock_login_ceshi.iml" filepath="$PROJECT_DIR$/mock_login_ceshi/mock_login_ceshi.iml" />
     </modules>
   </component>
 </project>
